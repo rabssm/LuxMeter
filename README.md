@@ -206,30 +206,49 @@ Note that the "Visible" and "IR" columns contain the channel 0 and channel 1 raw
 4       2022/12/24  00:00:03.416     0.001570       12     5  9876.0    100.0
 ```
 
-### Lux to Approx Fireball Magnitude (overhead) and Gain Settings
+### Lux ↔ Fireball Magnitude Reference
 
-Assumptions:
+_Assumptions_
+
 - Full Moon ≈ **0.25 lux** at **m = −12.7**
-- Fireball roughly overhead, clear sky
+- Fireball approximately **overhead**
+- **Clear sky** conditions
 
-| Illuminance (lux) | Approx magnitude |
-|---:|---:|
-| 0.001 | −4.2 |
-| 0.01 | −6.7 |
-| 0.05 | −8.4 |
-| 0.1 | −9.2 |
-| 0.25 (full Moon) | −12.7 |
-| 0.5 | −13.5 |
-| 1 | −14.2 |
-| 2 | −15.0 |
-| 5 | −16.0 |
-| 10 | −16.7 |
-| 20 | −17.5 |
-| 50 | −18.4 |
-| 100 | −19.2 |
-| 200 | −20.0 |
-| 500 | −21.0 |
-| 1000 | −21.7 |
+| Illuminance (lux) | Approx. Visual Magnitude |
+|------------------:|-------------------------:|
+| 0.001             | -6.7 |
+| 0.002             | -7.5 |
+| 0.005             | -8.5 |
+| 0.01              | -9.2 |
+| 0.02              | -10.0 |
+| 0.05              | -10.9 |
+| 0.1               | -11.7 |
+| 0.25 (Full Moon)  | -12.7 |
+| 0.5               | -13.5 |
+| 1                 | -14.2 |
+| 2                 | -15.0 |
+| 5                 | -16.0 |
+| 10                | -16.7 |
+| 20                | -17.5 |
+| 50                | -18.4 |
+| 100               | -19.2 |
+| 200               | -20.0 |
+| 500               | -21.0 |
+| 1000              | -21.7 |
+
+### Notes
+
+- Values represent **apparent visual magnitude at peak brightness**.
+- Actual observed magnitude can vary depending on:
+  - **meteor altitude**
+  - **distance from observer**
+  - **atmospheric extinction**
+  - **light curve shape**
+
+### Useful Rules of Thumb
+
+- **×2 increase in lux → ~0.75 magnitude brighter**
+- **×10 increase in lux → 2.5 magnitudes brighter**
 
 The gain settings of the sensor have the approximate limits shown below
 
